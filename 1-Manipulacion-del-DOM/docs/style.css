@@ -28,6 +28,7 @@ body {
     font-size: 20px;
     color: #333;
 }
+
 input[type="text"] {
     width: 100%;
     padding: 0.75rem;
@@ -35,6 +36,16 @@ input[type="text"] {
     border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
+}
+.btn-editar{
+    margin-left: 100px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 .btn-eliminar{
     margin-left: 100px;
