@@ -20,11 +20,14 @@ body {
     text-align: center;
 }
 
-h1 {
+.card{
     margin-bottom: 1rem;
     color: #333;
 }
-
+.cardinfo{
+    font-size: 20px;
+    color: #333;
+}
 input[type="text"] {
     width: 100%;
     padding: 0.75rem;
@@ -33,7 +36,16 @@ input[type="text"] {
     border-radius: 8px;
     font-size: 1rem;
 }
-
+.btn-eliminar{
+    margin-left: 100px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
 button {
     padding: 0.7rem 1.5rem;
     background-color: #4caf50;
@@ -62,4 +74,13 @@ ul li {
     border-radius: 6px;
     color: #2e7d32;
     font-weight: 500;
+}
+.card-fruta {
+    background-color: #fffae6;
+    border: 1px solid #f0c36d;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
