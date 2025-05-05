@@ -1,4 +1,6 @@
-const exploradores = [
+import '../components/exploradoresUser.js'
+
+export const exploradores = [
     { id: 1, nombre: "Lina Starfire", nave: "Nebula Voyager", rango: "Capitana" },
     { id: 2, nombre: "Xander Blaze", nave: "Nebula Voyager", rango: "Teniente" },
     { id: 3, nombre: "Kian Moon", nave: "Astro Nova", rango: "Capitán" },
