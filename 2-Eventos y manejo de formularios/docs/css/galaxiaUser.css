@@ -1,0 +1,56 @@
+#galaxiaContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.galaxia {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.galaxia:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.galaxia h2 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.galaxia p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.galaxia .estrellas {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.galaxia .planetas {
+    font-style: italic;
+    color: #ff6347;
+}
+
+.galaxia img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
