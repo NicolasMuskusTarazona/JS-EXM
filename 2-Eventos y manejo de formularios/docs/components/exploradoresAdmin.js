@@ -1,7 +1,7 @@
-import { exploradores } from'../js/exploradoresDataAdmin.js';
+import { exploradores } from "../js/exploradoresDataAdmin.js";
 
 function agregar() {
-    const agregarExplorador = document.getElementById('agregarExplorador');
+    const agregarExplorador = document.getElementById('agregarExplorador'); // <- este puede ser null
     agregarExplorador.classList.add('agregarExplorador')
     const contenedor = document.getElementById('exploradoresContainerAdmin');
     const inputContenedor = document.createElement('div');
@@ -50,27 +50,42 @@ function agregar() {
         }
     });
 }
-function eliminar(){
-    const eliminarExplorador = document.getElementById('eliminarExplorador')
-    eliminarExplorador.classList.add('eliminarExplorador')
-    const inputContenedorEliminar = document.createElement('div')
-    inputContenedorEliminar.id = 'inputContenedorEliminar';
-    eliminarExplorador.addEventListener("click",()=>{
-        if(!document.getElementById('nuevoInputEliminar')){
-            const inputEliminar = document.createElement('input')
+function eliminar() {
+    const eliminarExplorador = document.getElementById('eliminarExplorador');
+    const inputContenedorEliminar = document.getElementById('inputContenedorEliminar');
+
+    eliminarExplorador.addEventListener("click", () => {
+        if (!document.getElementById('nuevoInputEliminar')) {
+            const inputEliminar = document.createElement('input');
             inputEliminar.min = 0;
-            inputEliminar.type = "number"
-            inputEliminar.id = 'nuevoInputEliminar'
-            inputEliminar.placeholder = "Ingrese el ID del explorador"
-            inputContenedorEliminar.appendChild(inputEliminar)
-            const botonGuardarEliminar = document.createElement('button')
-            botonGuardarEliminar.classList.add('botonGuardar')
-            botonGuardarEliminar.textContent = "Guardar"
-            eliminarExplorador.appendChild(inputContenedorEliminar)
-            inputContenedorEliminar.appendChild(botonGuardarEliminar)
+            inputEliminar.type = "number";
+            inputEliminar.id = 'nuevoInputEliminar';
+            inputEliminar.placeholder = "Ingrese el ID del explorador";
+
+            const botonGuardarEliminar = document.createElement('button');
+            botonGuardarEliminar.classList.add('botonGuardar');
+            botonGuardarEliminar.textContent = "Guardar";
+
+            inputContenedorEliminar.appendChild(inputEliminar);
+            inputContenedorEliminar.appendChild(botonGuardarEliminar);
+
+            botonGuardarEliminar.addEventListener("click", () => {
+                const valorEliminar = parseInt(inputEliminar.value.trim());
+
+                if (!isNaN(valorEliminar)) {
+                    const borrarExplorador = JSON.parse(localStorage.getItem('exploradores')) || [];
+                    const actualizados = borrarExplorador.filter(explo => explo.id !== valorEliminar);
+                    localStorage.setItem('exploradores', JSON.stringify(actualizados));
+                    mostrarExploradores();
+                    inputEliminar.value = '';
+                } else {
+                    alert("Por favor ingrese un ID válido");
+                }
+            });
         }
-    })
+    });
 }
+
 
 function mostrarExploradores() {
     const contenedor = document.getElementById('exploradoresContainerAdmin');
