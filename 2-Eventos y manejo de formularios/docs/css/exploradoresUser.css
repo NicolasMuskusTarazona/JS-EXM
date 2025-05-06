@@ -5,57 +5,83 @@
     margin: 20px;
     justify-content: center;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .explorador {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Blanco puro */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
     width: 250px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 .explorador:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); /* Sombra más suave */
+    background-color: #e9ecef; /* Gris muy suave */
 }
 
 .explorador h3 {
-    margin-bottom: 15px;
-    font-size: 1.4em;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #343a40; /* Gris oscuro */
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .explorador p {
-    margin: 5px 0;
-    font-size: 1em;
-    color: #555;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #6c757d; /* Gris suave */
+    line-height: 1.5;
 }
 
 .explorador .rango {
-    font-weight: bold;
-    color: #007BFF;
+    font-weight: 600;
+    color: #007bff; /* Azul elegante */
+    font-size: 1.2em;
 }
 
 .explorador .nave {
     font-style: italic;
-    color: #ff6347;
+    color: #ff6f61; /* Un coral suave */
+    font-size: 1.1em;
 }
 
 /* Responsividad */
 @media (max-width: 1024px) {
     #exploradoresContainer {
-        gap: 20px;
-        padding: 10px;
+        gap: 25px;
+        padding: 15px;
     }
 
     .explorador {
         width: 220px;
+        padding: 20px;
+    }
+
+    .explorador h3 {
+        font-size: 1.3em;
+    }
+
+    .explorador p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    #exploradoresContainer {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .explorador {
+        width: 180px;
         padding: 15px;
     }
 
@@ -64,18 +90,18 @@
     }
 
     .explorador p {
-        font-size: 0.9em;
+        font-size: 0.95em;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     #exploradoresContainer {
         gap: 15px;
         padding: 10px;
     }
 
     .explorador {
-        width: 180px;
+        width: 160px;
         padding: 12px;
     }
 
@@ -84,26 +110,6 @@
     }
 
     .explorador p {
-        font-size: 0.85em;
-    }
-}
-
-@media (max-width: 480px) {
-    #exploradoresContainer {
-        gap: 10px;
-        padding: 5px;
-    }
-
-    .explorador {
-        width: 160px;
-        padding: 10px;
-    }
-
-    .explorador h3 {
-        font-size: 1em;
-    }
-
-    .explorador p {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 }
