@@ -46,3 +46,64 @@
     font-style: italic;
     color: #ff6347;
 }
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    #exploradoresContainer {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .explorador {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .explorador h3 {
+        font-size: 1.2em;
+    }
+
+    .explorador p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    #exploradoresContainer {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .explorador {
+        width: 180px;
+        padding: 12px;
+    }
+
+    .explorador h3 {
+        font-size: 1.1em;
+    }
+
+    .explorador p {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    #exploradoresContainer {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .explorador {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .explorador h3 {
+        font-size: 1em;
+    }
+
+    .explorador p {
+        font-size: 0.8em;
+    }
+}

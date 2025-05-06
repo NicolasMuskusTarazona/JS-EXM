@@ -54,3 +54,76 @@
     border-radius: 10px;
     margin-top: 15px;
 }
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    #navesContainer {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .nave {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .nave h2 {
+        font-size: 1.2em;
+    }
+
+    .nave p {
+        font-size: 0.9em;
+    }
+
+    .nave img {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navesContainer {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .nave {
+        width: 180px;
+        padding: 12px;
+    }
+
+    .nave h2 {
+        font-size: 1.1em;
+    }
+
+    .nave p {
+        font-size: 0.85em;
+    }
+
+    .nave img {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #navesContainer {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .nave {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .nave h2 {
+        font-size: 1em;
+    }
+
+    .nave p {
+        font-size: 0.8em;
+    }
+
+    .nave img {
+        margin-top: 5px;
+    }
+}

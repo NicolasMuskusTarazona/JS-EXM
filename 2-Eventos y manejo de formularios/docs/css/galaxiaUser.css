@@ -54,3 +54,76 @@
     border-radius: 10px;
     margin-top: 15px;
 }
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    #galaxiaContainer {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .galaxia {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .galaxia h2 {
+        font-size: 1.2em;
+    }
+
+    .galaxia p {
+        font-size: 0.9em;
+    }
+
+    .galaxia img {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #galaxiaContainer {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .galaxia {
+        width: 180px;
+        padding: 12px;
+    }
+
+    .galaxia h2 {
+        font-size: 1.1em;
+    }
+
+    .galaxia p {
+        font-size: 0.85em;
+    }
+
+    .galaxia img {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #galaxiaContainer {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .galaxia {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .galaxia h2 {
+        font-size: 1em;
+    }
+
+    .galaxia p {
+        font-size: 0.8em;
+    }
+
+    .galaxia img {
+        margin-top: 5px;
+    }
+}

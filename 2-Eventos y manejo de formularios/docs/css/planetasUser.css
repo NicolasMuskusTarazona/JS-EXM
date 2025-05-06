@@ -54,3 +54,76 @@
     border-radius: 10px;
     margin-top: 15px;
 }
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    #planetasContainer {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .planeta {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .planeta h2 {
+        font-size: 1.2em;
+    }
+
+    .planeta p {
+        font-size: 0.9em;
+    }
+
+    .planeta img {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #planetasContainer {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .planeta {
+        width: 180px;
+        padding: 12px;
+    }
+
+    .planeta h2 {
+        font-size: 1.1em;
+    }
+
+    .planeta p {
+        font-size: 0.85em;
+    }
+
+    .planeta img {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #planetasContainer {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .planeta {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .planeta h2 {
+        font-size: 1em;
+    }
+
+    .planeta p {
+        font-size: 0.8em;
+    }
+
+    .planeta img {
+        margin-top: 5px;
+    }
+}
