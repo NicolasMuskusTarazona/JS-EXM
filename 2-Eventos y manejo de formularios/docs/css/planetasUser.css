@@ -1,4 +1,4 @@
-#navesContainer {
+#planetasContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -8,7 +8,7 @@
     border-radius: 10px;
 }
 
-.nave {
+.planeta {
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
@@ -19,12 +19,12 @@
     overflow: hidden;
 }
 
-.nave:hover {
+.planeta:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.nave h2 {
+.planeta h2 {
     margin-bottom: 15px;
     font-size: 1.4em;
     font-family: 'Arial', sans-serif;
@@ -32,23 +32,23 @@
     text-transform: uppercase;
 }
 
-.nave p {
+.planeta p {
     margin: 5px 0;
     font-size: 1em;
     color: #555;
 }
 
-.nave .velo {
+.planeta .tipo {
     font-weight: bold;
     color: #007BFF;
 }
 
-.nave .exploradores {
+.planeta .exploradores {
     font-style: italic;
     color: #ff6347;
 }
 
-.nave img {
+.planeta img {
     width: 100%;
     height: auto;
     border-radius: 10px;
