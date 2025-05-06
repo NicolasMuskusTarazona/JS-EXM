@@ -1,0 +1,108 @@
+.agregarExplorador {
+    background-color: #004d80;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.agregarExplorador:hover {
+    background-color: #0066cc;
+}
+
+.agregarExplorador:focus {
+    outline: none;
+}
+
+#eliminarExplorador {
+    background-color: #004d80;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#eliminarExplorador:hover {
+    background-color: #0066cc;
+}
+
+#eliminarExplorador:focus {
+    outline: none;
+}
+
+input {
+    width: 100%; 
+    padding: 12px;
+    margin: 10px auto;
+    background-color: #000000;
+    color: white;
+    border: 2px solid #004d80;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00bfff;
+    box-shadow: 0 0 5px #00bfff;
+}
+
+#exploradoresContainerAdmin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#exploradoresContainerAdmin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+.botonGuardar{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #178530; 
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    font-weight: bold;
+}

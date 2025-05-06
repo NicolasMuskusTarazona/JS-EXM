@@ -7,7 +7,7 @@ function mostrarExploradores(){
         divExplorador.classList.add('explorador')
         divExplorador.innerHTML= `
             <h2>${explorador.nombre}</h2>
-            <h2>ID:${explorador.id}</h2>
+            <h2>ID:<br>${explorador.id}</h2>
             <p class="nave"><strong>Nave: ${explorador.nave}</strong></p>
             <p class="rango"><strong>Rango: ${explorador.rango}</strong></p>
         `
