@@ -13,7 +13,6 @@ admin.addEventListener('click', () => {
     </form>
     `
     const loginForm = document.getElementById('loginForm')
-
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault()
         const adminIngresado = document.getElementById('inputAdmin').value
@@ -27,7 +26,7 @@ admin.addEventListener('click', () => {
                     Entrar
                 </a>
             </div>
-        `        
+        `
         } else {
             alert('Usuario o contraseña incorrectos. Intenta de nuevo.');
         }
