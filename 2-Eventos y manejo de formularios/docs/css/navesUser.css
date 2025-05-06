@@ -1,0 +1,57 @@
+#navesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+    justify-content: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nave {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.nave:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nave h2 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.nave p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.nave .velo {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.nave .exploradores {
+    font-style: italic;
+    color: #ff6347;
+}
+
+.nave img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
