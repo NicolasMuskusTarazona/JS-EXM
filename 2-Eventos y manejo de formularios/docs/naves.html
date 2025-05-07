@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naves | NASA</title>
     <link rel="icon" href="./storage/img/logoNasa.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navesUser.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/exploradoresUser.css" />
+    <link rel="stylesheet" href="css/navesUser.css" />
+    <link rel="stylesheet" href="css/navesAdmin.css">
+    <link rel="stylesheet" href="../../general.css">
     <script defer type="module" src="./js/navesData.js"></script>
+    <script defer type="module" src="./js/navesViews.js"></script>
 </head>
 <body>
     <header>
@@ -24,6 +28,17 @@
         <h1>NASA USER</h1>
     </header>
     <main>
+        <h2>Buscador 🔎</h2>
+        <input type="text" id="inputBuscar" placeholder="Buscar por Nombre...">
+        <button id="botonBuscar">Buscar</button><br><br>
+        <h2>Resultado Busqueda</h2>
+        <div id="resultadoBusqueda"></div>
+
+        <h2 style="text-align: center;">Nuevas Naves 🚀</h2>
+        <div id="navesContainerAdmin"></div><br><br>
+
+        <h2 style="text-align: center;">Naves 🚀</h2>
+        <div id="exploradoresContainerAdministrador"></div>
         <div id="navesContainer"></div>
     </main>
     <footer>

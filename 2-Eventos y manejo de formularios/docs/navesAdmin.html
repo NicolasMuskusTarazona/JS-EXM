@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naves | NASA</title>
+    <link rel="icon" href="./storage/img/logoNasa.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/exploradoresUser.css" />
+    <link rel="stylesheet" href="css/navesUser.css" />
+    <link rel="stylesheet" href="css/navesAdmin.css">
+    <link rel="stylesheet" href="../../general.css">
+    <script defer type="module" src="./js/navesData.js"></script>
+    <script defer type="module" src="./js/navesViews.js"></script>
+    <script defer type="module" src="./js/navesDataAdmin.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="NasaAdmin.html">Inicio</a></li>
+                <li><a href="exploradoresAdmin.html">Exploradores</a></li>
+                <li><a href="navesAdmin.html">Naves</a></li>
+                <li><a href="planetasAdmin.html">Planetas</a></li>
+                <li><a href="galaxiaAdmin.html">Galaxia</a></li>
+                <li><a href="Login.html">Regresar</a></li>
+            </ul>
+        </nav>
+        <h1>NASA ADMIN</h1>
+    </header>
+    <main>
+        <h2>Buscador 🔎</h2>
+        <input type="text" id="inputBuscar" placeholder="Buscar por Nombre...">
+        <button id="botonBuscar">Buscar</button><br><br>
+        <h2>Resultado Busqueda</h2>
+        <div id="resultadoBusqueda"></div>
+
+        <button id="agregarNave"class="agregarNave">Agregar Nave</button><br><br>
+
+        <!-- Formulario oculto al inicio -->
+        <form id="formularioNave" style="display:none;">
+            <input type="text" id="imagenNave" placeholder="Imagen Nave">
+            <input id="nombreNave" placeholder="Nombre Nave"/>
+            <input id="tecnologiaNave" placeholder="Tecnologia Nave"/>
+            <input id="velocidadMaximaNave" placeholder="Velocidad Maxima Nave"/>
+            <input id="exploradoresNave" placeholder="ExploradoresNave"/>
+            <button type="button" id="confirmarNave">Confirmar</button>
+        </form>
+
+        <h2 style="text-align: center;">Naves Agregados 🚀</h2>
+        <div id="navesContainerAdmin"></div>
+        <div id="exploradoresContainerAdministrador"></div>
+
+
+        <h2 style="text-align: center;">Naves Usuario 👤</h2>
+        <div id="navesContainer"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nicolas Muskus Tarazona</p>
+    </footer>
+</body>
+
+</html>
