@@ -1,5 +1,5 @@
 import '../components/exploradoresUser.js'
-import '../components/exploradoresViews.js'
+
 
 export const exploradores = [
     { id: 1, nombre: "Lina Starfire", nave: "Nebula Voyager", rango: "Capitana" },

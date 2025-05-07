@@ -1,4 +1,4 @@
-.agregarExplorador {
+#agregarExplorador {
     background-color: #004d80;
     font-weight: bold;
     color: white;
@@ -17,15 +17,15 @@
     margin: 0 auto;
 }
 
-.agregarExplorador:hover {
+#agregarExplorador:hover {
     background-color: #0066cc;
 }
 
-.agregarExplorador:focus {
+#agregarExplorador:focus {
     outline: none;
 }
 
-#inputContenedorEliminar {
+.eliminar {
     background-color: #004d80;
     font-weight: bold;
     color: white;
@@ -43,32 +43,14 @@
     margin: 0 auto;
 }
 
-#inputContenedorEliminar:hover {
+.eliminar:hover {
     background-color: #0066cc;
 }
 
-#inputContenedorEliminar:focus {
+.eliminar:focus {
     outline: none;
 }
 
-#eliminarExplorador {
-    background-color: #004d80;
-    font-weight: bold;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px 0;
-    box-shadow: 0 4px 10px rgba(2, 87, 197, 0.61);
-    font-size: 1.1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
 
 #editarExplorador {
     background-color: #004d80;
@@ -171,7 +153,7 @@ input:focus {
     border-radius: 15px;
 }
 
-.botonGuardar{
+#confirmarExplorador{
     width: 100%;
     padding: 12px;
     margin: 10px 0;

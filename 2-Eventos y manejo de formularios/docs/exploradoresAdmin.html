@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exploradores | NASA</title>
-    <link rel="icon" href="./storage/img/logoNasa.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/exploradoresUser.css">
-    <link rel="stylesheet" href="css/ExploradoresAdmin.css">
+    <link rel="icon" href="./storage/img/logoNasa.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/exploradoresUser.css" />
+    <link rel="stylesheet" href="css/ExploradoresAdmin.css" />
     <script defer type="module" src="./js/exploradoresData.js"></script>
     <script defer type="module" src="./js/exploradoresDataAdmin.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -25,30 +27,35 @@
         </nav>
         <h1>NASA ADMIN</h1>
     </header>
-    <main>
 
+    <main>
         <h2>Buscador 🔎</h2>
-        <input type="text" id="inputBuscar" placeholder="Buscar por Nombre...">
+        <input type="text" id="inputBuscar" placeholder="Buscar por Nombre..." />
         <button id="botonBuscar">Buscar</button><br><br>
+
         <h2>Resultado Busqueda</h2>
         <div id="resultadoBusqueda"></div>
 
         <button id="agregarExplorador">Agregar Explorador</button><br><br>
 
-        <button id="eliminarExplorador">Eliminar</button><br><br>
-        <div id="inputContenedorEliminar"></div><br><br>
-
-        <editar-explorador style="margin: 0 auto;"></editar-explorador><br><br>
+        <!-- Formulario oculto al inicio -->
+        <div id="formularioExplorador" style="display: none; margin-bottom: 1rem;">
+            <input type="text" id="nombreExplorador" placeholder="Nombre del explorador" />
+            <input type="text" id="naveExplorador" placeholder="Nave del explorador" />
+            <input type="text" id="rangoExplorador" placeholder="Rango del explorador" />
+            <button id="confirmarExplorador">Confirmar Explorador</button>
+        </div>
 
         <h2 style="text-align: center;">Exploradores Agregados 🚀</h2>
-        <div id="exploradoresContainerAdmin"></div>
+        <div id="exploradoresContainerAdministrador"></div>
 
         <h2 style="text-align: center;">Exploradores Usuario 👤</h2>
         <div id="exploradoresContainer"></div>
-        
     </main>
+
     <footer>
         <p>&copy; 2025 Nicolas Muskus Tarazona</p>
     </footer>
 </body>
+
 </html>
